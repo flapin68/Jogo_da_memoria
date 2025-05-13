@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: rgb(12, 10, 165);
+    border: 5px outset red;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto 70px auto;
+    background-color: orange;
+        
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    letter-spacing: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #960d7f;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+    transition: all 0.1s ease;
+    color: white;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #a86f7d;
+    color: black;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    background: radial-gradient(circle, rgb(62, 117, 199) 40%, lime);
+    border-radius: 20px;;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 40px;
+    gap: 10px;
+
+    
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ece928;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    perspective: 1000px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: none;
+}
+
+.card.flipped img {
+    display: block;
+}
